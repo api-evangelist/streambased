@@ -1,8 +1,31 @@
 aid: streambased
 name: Streambased
-description: Streambased is a company surfaced as a portfolio company of seedcamp and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Streambased unifies Apache Kafka and Apache Iceberg into a single queryable
+  view, making real-time streaming data and historical table data accessible
+  together without copying data, building new pipelines, or changing existing
+  tools. Its zero-copy architecture turns live Kafka topics into Iceberg tables
+  queryable with SQL in milliseconds, while metadata, schema rules, and access
+  controls carry over from Kafka to Iceberg for unified governance. The platform
+  ships as Streambased Cloud (managed) and the Streambased Platform components
+  I.S.K. (Iceberg Service for Kafka), K.S.I. (Kafka Service for Iceberg),
+  Hyperstream, and Slipstream, and is consumed through the Apache Iceberg REST
+  catalog interface and native Apache Kafka protocol using per-cluster API keys.
+  Backed by Seedcamp.
 url: https://raw.githubusercontent.com/api-evangelist/streambased/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/68e1207352dda659459cd236/69020db4e16a8cbebe7a6738_web.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,9 +34,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Data
+- Streaming
+- Apache Kafka
+- Apache Iceberg
+- Analytics
+- Real-Time Data
+- Data Lakehouse
+- SQL
+- Data Governance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +54,45 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://streambased.io
+  url: https://streambased.io
+- type: DeveloperPortal
+  url: https://docs.streambased.io/
+- type: Documentation
+  url: https://docs.streambased.io/
+- type: GettingStarted
+  url: https://docs.streambased.io/get-started/what-can-i-do-with-streambased
+- type: Blog
+  url: https://blog.streambased.io
+- type: Pricing
+  url: https://streambased.io/pricing
+- type: SignUp
+  url: https://streambased.io/free-trial
+- type: Support
+  url: https://streambased.io/contact-us
+- type: PrivacyPolicy
+  url: https://streambased.io/legal-info-and-privacy-policy
+- type: TermsOfService
+  url: https://streambased.io/legal-info-and-privacy-policy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/streambased
+- type: YouTube
+  url: https://www.youtube.com/@streambased
+- type: Twitter
+  url: https://x.com/streambasedio
+- type: LLMsTxt
+  url: llms/streambased-llms.txt
+- type: Authentication
+  url: authentication/streambased-authentication.yml
+- type: Conformance
+  url: conformance/streambased-conformance.yml
+- type: DomainSecurity
+  url: security/streambased-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/streambased-vulnerability-disclosure.yml
+- type: Security
+  url: https://docs.google.com/document/d/1rEAs-06xQdE3Kqx-3iJBcDlknBR97aiD7l0OQfbg6mQ
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1

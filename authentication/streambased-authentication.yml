@@ -1,0 +1,27 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.streambased.io/deploy-and-operate/streambased-cloud/create-your-first-streambased-api-key
+docs: https://docs.streambased.io/deploy-and-operate/streambased-cloud/create-your-first-streambased-api-key
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - credential
+  oauth2_flows: []
+  note: >-
+    Streambased Cloud authenticates requests with a Streambased API Key. An API
+    Key is created per Kafka cluster and authenticates access to Streambased
+    managed services (the Iceberg REST interface / SQL query surface over your
+    Kafka topics). Streambased is consumed through standard Apache Kafka and
+    Apache Iceberg REST clients rather than a bespoke REST API, so the API key is
+    supplied through the client's credential mechanism (e.g. Kafka SASL / Iceberg
+    catalog credential) rather than a documented HTTP header name.
+schemes:
+- name: StreambasedApiKey
+  type: apiKey
+  in: credential
+  description: >-
+    Per-cluster Streambased API Key that authenticates requests to Streambased
+    managed services. Created in Streambased Cloud under the Kafka cluster.
+  sources:
+  - https://docs.streambased.io/deploy-and-operate/streambased-cloud/create-your-first-streambased-api-key

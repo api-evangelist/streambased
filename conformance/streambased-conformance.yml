@@ -1,0 +1,30 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.streambased.io/
+docs: https://docs.streambased.io/reference/key-concepts
+note: >-
+  Streambased is not a bespoke REST API; it implements open, cross-cutting data
+  standards. It exposes Kafka topics as Apache Iceberg tables queryable with SQL,
+  presenting an Iceberg REST catalog interface to query engines while speaking the
+  native Apache Kafka wire protocol on the ingest side. Conformance below reflects
+  the standards the platform interoperates with, per the public documentation.
+standards:
+- id: apache-iceberg-rest-catalog
+  conforms: true
+  evidence: >-
+    Streambased Cloud exposes Kafka data through an Iceberg interface, letting
+    engines query topics as Iceberg tables via the Iceberg REST catalog.
+- id: apache-kafka-protocol
+  conforms: true
+  evidence: >-
+    Connects to customer Kafka clusters and Schema Registry using the native
+    Kafka wire protocol (I.S.K. / K.S.I. / Hyperstream / Slipstream components).
+- id: sql
+  conforms: true
+  evidence: Query your own Kafka data using SQL via the Iceberg interface.
+- id: oauth2
+  conforms: false
+- id: openid-connect
+  conforms: false
+- id: rfc9457-problem-details
+  conforms: false
