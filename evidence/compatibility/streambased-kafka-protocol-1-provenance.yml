@@ -1,0 +1,12 @@
+fetched: '2026-10-13'
+method: fetched
+source: https://www.streambased.io/
+page: https://www.streambased.io/
+file: streambased-kafka-protocol-1.md
+bytes: 5812
+sha256: 24b0483e5e65565ed42eab1efd1f96cab7e06cf6fa9f19154410340bebd032fa
+anchor: apache-kafka
+shape: kafka-protocol
+classification: no-compatibility-statement
+quote: null
+note: text extracted from the provider's own page (tags stripped), saved for evidence
